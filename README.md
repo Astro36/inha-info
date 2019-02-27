@@ -1,1 +1,1 @@
-# inha
+# Inha Information
