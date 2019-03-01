@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Astro36/inha.git"
+    "url": "git+https://github.com/Astro36/inha-info.git"
   },
   "author": "Seungjae Park <astro.psj@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Astro36/inha/issues"
+    "url": "https://github.com/Astro36/inha-info/issues"
   },
-  "homepage": "https://github.com/Astro36/inha#readme"
+  "homepage": "https://github.com/Astro36/inha-info#readme"
 }
