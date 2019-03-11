@@ -4,9 +4,14 @@
 
 [![npm](https://img.shields.io/npm/v/inha-info.svg?style=for-the-badge)](https://www.npmjs.com/package/inha-info) [![npm](https://img.shields.io/npm/dt/inha-info.svg?style=for-the-badge)](https://www.npmjs.com/package/inha-info)
 
+## ChangeLog
+
+See [CHANGELOG](./CHANGELOG.md)
+
 ## Features
 
 - Fetch all colleges information.
+- Fetch all courses information.
 - Fetch all departments information.
 - Fetch all professors information.
 
