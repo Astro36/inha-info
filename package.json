@@ -15,11 +15,13 @@
   "devDependencies": {
     "eslint": "^5.15.1",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0"
+    "eslint-plugin-import": "^2.16.0",
+    "mocha": "^6.0.2"
   },
   "scripts": {
-    "lint": "eslint lib",
-    "lint:fix": "eslint lib --fix"
+    "lint": "eslint lib test",
+    "lint:fix": "eslint lib test --fix",
+    "test": "mocha --timeout 10000"
   },
   "repository": {
     "type": "git",
