@@ -19,8 +19,8 @@
     "mocha": "^6.0.2"
   },
   "scripts": {
-    "lint": "eslint lib test",
-    "lint:fix": "eslint lib test --fix",
+    "lint": "eslint lib scripts test",
+    "lint:fix": "eslint lib scripts test --fix",
     "test": "mocha --timeout 10000"
   },
   "repository": {
