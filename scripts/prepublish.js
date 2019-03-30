@@ -32,7 +32,8 @@ request(UNIV_URL, (err, httpResponse, body) => {
       .map(element => ({
         name: element.textContent,
         id: element.href.match(/deptCode=(\d+)/)[1],
-        subId: element.href.match(/majorCodeH=(\d+)/)[1],
+        subId1: element.href.match(/majorCodeH=(\d+)/)[1],
+        subId2: element.href.match(/majorCodeH=(\w+)/)[1],
       }));
     fs.writeFileSync(path.join(__dirname, '../data/departments.json'), JSON.stringify(departments, null, 4));
   }

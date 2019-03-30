@@ -19,6 +19,7 @@
     "mocha": "^6.0.2"
   },
   "scripts": {
+    "prepublish": "node scripts/prepublish.js",
     "lint": "eslint lib scripts test",
     "lint:fix": "eslint lib scripts test --fix",
     "test": "mocha --timeout 10000"
