@@ -13,15 +13,17 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "eslint": "^5.15.1",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
+    "jsdoc": "^3.5.5",
     "mocha": "^6.0.2"
   },
   "scripts": {
-    "prepublish": "node scripts/prepublish.js",
+    "docs": "jsdoc lib -d docs",
     "lint": "eslint lib scripts test",
     "lint:fix": "eslint lib scripts test --fix",
+    "prepare": "node scripts/prepare.js",
     "test": "mocha --timeout 10000"
   },
   "repository": {
