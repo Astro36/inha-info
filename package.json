@@ -8,11 +8,18 @@
     "information",
     "crawler"
   ],
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  },
   "dependencies": {
     "jsdom": "^14.0.0",
     "request": "^2.88.0"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-json-schema": "^1.5.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
