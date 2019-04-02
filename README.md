@@ -11,9 +11,8 @@ See [CHANGELOG](./CHANGELOG.md)
 ## Features
 
 - Fetch all colleges information.
-- Fetch all courses information.
 - Fetch all departments information.
-- Fetch all professors information.
+- Fetch faculty/student restaurant menu information.
 
 ## Installation
 
@@ -31,49 +30,17 @@ git clone https://github.com/Astro36/inha-info.git
 
 ## Usage
 
+## API Documentation
+
+See [API](https://astro36.github.io/inha-info/)
+
 ### Example
 
-Fetch all college name list:
+Fetch today student restaurant menus:
 
 ```javascript
-const inhaInfo = require('inha-info');
-const colleges = await inhaInfo.getAllColleges();
-console.log(colleges.map(college => college.name)); // ['프런티어 학부대학', '공과대학', '자연과학대학', ... ]
-```
-
-Fetch all department name list:
-
-```javascript
-const inhaInfo = require('inha-info');
-const depts = await inhaInfo.getAllDepartments();
-console.log(depts.map(dept => dept.name)); // ['기계공학과', '항공우주공학과', '조선해양공학과', ... ]
-```
-
-Fetch [ICE](http://www.inha.ac.kr/cop/search/introList.do?siteId=kr&deptCode=1185&majorCodeH=283&majorCodeS=0022&codeS=0183&id=kr_030201200000)’s course name list:
-
-```javascript
-const inhaInfo = require('inha-info');
-const depts = await inhaInfo.getAllDepartments()
-const courses = await depts.find(dept => dept.name === '정보통신공학과').getCourses();
-console.log(courses.map(course => course.name)); // ['크로스오버 1 : 인간의 탐색', '크로스오버 3 : 사회의 탐색', ... ]
-```
-
-Fetch [ICE](http://www.inha.ac.kr/cop/search/introList.do?siteId=kr&deptCode=1185&majorCodeH=283&majorCodeS=0022&codeS=0183&id=kr_030201200000)’s restricted course name list:
-
-```javascript
-const inhaInfo = require('inha-info');
-const depts = await inhaInfo.getAllDepartments()
-const courses = await depts.find(dept => dept.name === '정보통신공학과').getRestrictedCourses();
-console.log(courses.map(course => course.name)); // ['C언어', '객체지향프로그래밍', '수치해석', ... ]
-```
-
-Fetch all professor name list:
-
-```javascript
-const inhaInfo = require('inha-info');
-const depts = await inhaInfo.getAllDepartments();
-const profs = await Promise.all(depts.map(dept => dept.getProfessors()));
-console.log(profs.flat()); // ['김광용 교수', '김재도 교수', '이우식 교수', ... ]
+const { restaurant } = require('inha-info');
+console.log(await restaurant.getDailyStudentMenus(new Date()));
 ```
 
 ## License
