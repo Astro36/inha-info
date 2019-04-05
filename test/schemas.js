@@ -181,7 +181,7 @@ const studentRestaurantMenusSchema = {
           }),
         },
       },
-      required: ['뚝배기', '명가', '누들', '스낵', '돈까스'],
+      required: ['뚝배기', '명가', '누들', '소반', '돈까스'],
     },
     'Casual/Dining': createNullableSchema({
       type: 'object',
